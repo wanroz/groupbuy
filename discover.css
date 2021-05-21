@@ -1,0 +1,47 @@
+.discover-main-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.discover-main-section iframe {
+  margin-left: 2rem;
+}
+
+.specs {
+  display: flex;
+  margin-bottom: 2rem;
+}
+
+table,
+td,
+th {
+  border: 1px solid white;
+  font-style: normal;
+  font-family: monospace;
+  font-size: 15px;
+  text-align: left;
+}
+
+table {
+  width: 70%;
+  border-collapse: collapse;
+}
+
+th {
+  width: 70px;
+}
+
+@media (max-width: 800px) {
+  .discover-main-section {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .discover-main-section iframe {
+    margin-top: 2rem;
+    height: 30vw;
+    width: auto;
+  }
+}
